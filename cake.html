@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Cake 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cake.css">
+</head>
+<body>
+
+  <div class="confetti-container" id="confettiContainer"></div>
+  <div class="scene">
+    <h1 class="title">Happy Birthday!</h1>
+
+    <div class="cake-wrapper">
+
+        <div class="toast"><h4>Make a wish first and then blow it!</h4></div>
+
+      <!-- Candles -->
+      <div class="candles">
+        <div class="candle" id="c1">
+          <div class="flame-wrap">
+            <div class="flame">
+              <div class="flame-inner"></div>
+            </div>
+            <div class="flame-glow"></div>
+          </div>
+          <div class="wick"></div>
+          <div class="candle-body blue">
+            <div class="stripe"></div><div class="stripe"></div><div class="stripe"></div>
+          </div>
+        </div>
+        <div class="candle" id="c2">
+          <div class="flame-wrap">
+            <div class="flame">
+              <div class="flame-inner"></div>
+            </div>
+            <div class="flame-glow"></div>
+          </div>
+          <div class="wick"></div>
+          <div class="candle-body pink">
+            <div class="stripe"></div><div class="stripe"></div><div class="stripe"></div>
+          </div>
+        </div>
+        <div class="candle" id="c3">
+          <div class="flame-wrap">
+            <div class="flame">
+              <div class="flame-inner"></div>
+            </div>
+            <div class="flame-glow"></div>
+          </div>
+          <div class="wick"></div>
+          <div class="candle-body orange">
+            <div class="stripe"></div><div class="stripe"></div><div class="stripe"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top layer -->
+      <div class="layer top-layer">
+        <div class="frosting top-frosting"></div>
+        <div class="drips">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="swirl-row">
+          <div class="swirl"></div><div class="swirl"></div><div class="swirl"></div>
+        </div>
+      </div>
+
+      <!-- Middle layer -->
+      <div class="layer mid-layer">
+        <div class="frosting mid-frosting"></div>
+        <div class="drips">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="dot-row">
+          <span class="dot red"></span><span class="dot blue"></span>
+          <span class="dot green"></span><span class="dot yellow"></span>
+          <span class="dot red"></span><span class="dot blue"></span>
+          <span class="dot green"></span>
+        </div>
+      </div>
+
+      <!-- Bottom layer -->
+      <div class="layer bot-layer">
+        <div class="frosting bot-frosting"></div>
+        <div class="drips">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="dot-row big">
+          <span class="dot pink"></span><span class="dot blue"></span>
+          <span class="dot green"></span><span class="dot orange"></span>
+          <span class="dot pink"></span><span class="dot blue"></span>
+          <span class="dot green"></span><span class="dot orange"></span>
+        </div>
+      </div>
+
+      <!-- Plate -->
+      <div class="plate">
+        <div class="plate-shine"></div>
+      </div>
+      <!-- NEW TOAST -->
+      <div class="next-toast" id="nextToast" style="display:none;">
+      <h4>One more surprise is waiting for you ✨</h4>
+
+      <button onclick="window.location.href='gift.html'">
+        Continue ❤️
+      </button>
+    </div>
+
+    </div><!-- end cake-wrapper -->
+
+    <div class="btn-area">
+      <button id="blowBtn" class="blow-btn">
+        <span class="btn-icon">💨</span> Blow the Candles!
+      </button>
+      <button id="relightBtn" class="relight-btn" style="display:none;">
+        <span class="btn-icon">🔥</span> Relight
+      </button>
+    </div>
+
+    <p class="hint" id="hint">Click the button to blow out the candles!</p>
+  </div>
+
+  <script src="cake.js"></script>
+</body>
+</html>
