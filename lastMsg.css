@@ -17,16 +17,19 @@ body{
 .lastMsg{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 50px;
 }
 .inputContainer{
     display: none;
     gap: 10px;
     flex-direction: column;
-    align-items: center;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
 }
-
+.finalMsg{
+    padding: 10px;
+}
 .msgBox{
     width: 400px;
     height: 50px;
@@ -72,13 +75,17 @@ body{
         padding: 15px;
     }
 
-    .lastMsg{
-        gap: 20px;
-    }
+    .lastMsg {
+    gap: 20px;
+    padding: 0 10px; /* increase this, e.g. 0 20px */
+    width: 100%;
+    box-sizing: border-box; /* make sure this is set */
+  }
 
     .msgBox{
         font-size: 16px;
         height: 45px;
+        flex-wrap: nowrap;
     }
 
     .sendBtn{
@@ -91,13 +98,18 @@ body{
 
     body{
         font-size: 0.95rem;
+        padding: 10px;
     }
 
     .msgBox{
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .sendBtn{
         max-width: 100%;
+    }
+    .lastMsg{
+        padding: 0px 10px;
+        flex-wrap: wrap;
     }
 }

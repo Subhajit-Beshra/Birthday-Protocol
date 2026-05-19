@@ -1,6 +1,14 @@
 const messages = [
-    "I hope you like it!\n\n",
-    "Write a message for me!"
+    "Lastly I wanna say\n\n",
+    "Your happiness matters a lot\n\n",
+    "But there will be somedays when you feel like you're alone\n\n",
+    "And then you should not break down\n\n",
+    "Cause, everything has a limit\n\n",
+    "So, it is valid for your bad times too!\n\n",
+    "I don't know what you think about me...\n\n",
+    "But, all I can do is pray for you\n\n",
+    "Pray for your happiness\n\n",
+    "So, stay wealthy and happy💝"
 ];
 
 let msgIndex = 0;
